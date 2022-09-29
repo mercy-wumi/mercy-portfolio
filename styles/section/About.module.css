@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    /* margin-bottom: 6rem; */
+}
+
+.aboutme,
+.img {
+    flex: 1;
+}
+
+.heading {
+    display: flex;
+    width: 100%;
+}
+
+.heading hr {
+    display: inline;
+}
+
+.stack {
+    display: flex;
+}
+
+.stack>ul {
+    margin-right: 3rem;
+}
+
+.img {
+    margin-left: 6rem;
+}
+
+.profileImg {
+    border-radius: 5px;
+}

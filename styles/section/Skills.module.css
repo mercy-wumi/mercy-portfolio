@@ -1,0 +1,30 @@
+.skills {
+    padding-top: 2rem;
+    width: 50%;
+    margin: auto;
+    display: flex;
+}
+
+.work {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.work li {
+    cursor: pointer;
+    border-left: 2px solid var(--btn-hover);
+    padding: .5rem 1rem;
+}
+
+.clicked {
+    border-left: 2px solid var(--btn-border) !important;
+}
+
+.work li:hover {
+    color: var(--btn-border);
+}
+
+.experience {
+    flex: 1;
+
+}

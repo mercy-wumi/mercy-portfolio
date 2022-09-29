@@ -1,7 +1,24 @@
+:root {
+  --body-color: rgb(3, 73, 73);
+  --text-color: #fff;
+  --btn-border: rgb(8, 196, 196);
+  --btn-hover: rgb(5, 128, 128);
+  --heading: grey;
+  --rule: teal;
+  --hover: teal;
+  --background-dark: #000;
+  --font: 16px;
+  --littleLarge: 20px;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
+  background: var(--body-color);
+  color: var(--text-color);
+  max-width: 1400px;
+  margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -19,8 +36,13 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
-    color: white;
-    background: black;
+    color: var(--text-color);
+    background: var(--background-dark);
   }
+}
+
+section {
+  margin: 0 0 8rem 0;
 }

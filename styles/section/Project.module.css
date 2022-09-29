@@ -1,0 +1,97 @@
+/* .projSec {
+    margin-bottom: 6rem;
+} */
+
+.proj {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 6rem;
+}
+
+.projItem {
+    position: relative;
+    width: 30%;
+    cursor: pointer;
+    background: var(--btn-hover);
+}
+
+.stack {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 1rem;
+}
+
+.gitTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.gitTitle span {
+    font-weight: 600;
+    font-size: var(--littleLarge);
+}
+
+/* Project Details on Hover */
+
+.projEnlarge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 20;
+    width: 120%;
+    margin-top: -20px;
+    margin-left: -20px;
+    height: auto;
+    background: var(--btn-hover);
+}
+
+.projEnlargeShow {
+    display: block;
+}
+
+.projEnlargeHide {
+    display: none;
+}
+
+.projDetails {
+    display: block;
+    padding: 1rem;
+}
+
+.projDetails h4 {
+    margin-top: 0;
+}
+
+.projImg {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+/* Articles */
+
+.article {
+    width: 30%;
+    background: inherit;
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top: 2px solid var(--btn-hover);
+}
+
+.article h4 {
+    font-size: 25px;
+    margin: .5rem 0;
+}
+
+.article span {
+    color: var(--btn-hover);
+}
+
+.articlesHead {
+    text-align: center;
+}

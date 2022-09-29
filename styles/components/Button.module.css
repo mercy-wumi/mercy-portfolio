@@ -1,0 +1,12 @@
+.button {
+    padding: 0.7rem 1rem;
+    border: 1px solid var(--btn-border);
+    background: inherit;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn-link {
+    margin-top: 2rem;
+}
