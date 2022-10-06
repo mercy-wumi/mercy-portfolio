@@ -1,22 +1,89 @@
 .hero {
     margin-top: 3rem;
-    /* margin-bottom: 6rem; */
     display: grid;
     grid-template-columns: 5fr 3fr;
 }
 
-.hero h1 p {
+.heading span {
     display: block;
-    font-size: 4.5rem;
+    font-size: var(--xxLargeText);
     margin: 0;
 }
 
 .salute {
-    font-size: 1.5rem;
+    font-size: var(--heading) !important;
 }
 
 .intro {
     font-size: 18px;
     margin-bottom: 2.5rem;
     line-height: 1.5;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1110px) {
+    .heading span {
+        font-size: var(--xxLarge);
+    }
+}
+
+@media (max-width: 1110px) {
+    .heading span {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 870px) {
+    .heading span {
+        font-size: 50px;
+    }
+
+    .salute {
+        font-size: 25px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .socialLinks {
+        display: none;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 870px) {
+    .heading span {
+        font-size: 40px;
+    }
+
+    .salute {
+        font-size: 25px !important;
+    }
+}
+
+@media (max-width: 466px) {
+    .heading span {
+        font-size: 40px;
+    }
+
+    .salute {
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .heading span {
+        font-size: 25px;
+    }
+
+    .salute {
+        font-size: 20px !important;
+    }
 }

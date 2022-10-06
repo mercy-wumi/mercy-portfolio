@@ -14,7 +14,7 @@ const articles = [
         color: 'red'
     },
     {
-        id: 1,
+        id: 2,
         category: 'Version Control',
         name: 'Git and GitHub',
         stack: ['git', 'github'],
@@ -24,7 +24,7 @@ const articles = [
         color: 'red'
     },
     {
-        id: 1,
+        id: 3,
         category: 'Version Control',
         name: 'Git and GitHub',
         stack: ['git', 'github'],
@@ -37,9 +37,9 @@ const articles = [
 
 const Articles = () => {
     return (
-        <div className={projStyles.proj}>
+        <div className={projStyles.articleList}>
             {articles.map(article => (
-                <div className={projStyles.article}>
+                <div className={projStyles.article} key={article.id}>
                     <span>{article.category}</span>
                     <h4>{article.name}</h4>
                     <p>{article.details}</p>

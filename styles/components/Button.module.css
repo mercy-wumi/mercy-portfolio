@@ -5,6 +5,14 @@
     color: white;
     cursor: pointer;
     border-radius: 3px;
+    font-size: var(--btnText);
+    transition: all ease .2s;
+}
+
+.button:hover {
+    background: rgba(255, 211, 105, 0.8);
+    font-weight: 600;
+    font-size: var(--defaultText);
 }
 
 .btn-link {

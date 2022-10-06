@@ -1,12 +1,22 @@
 .nav {
-    /* position: fixed; */
-    top: 0;
-    left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    padding: 0 50px;
+    height: 80px;
+    z-index: 50;
+}
+
+.scrolled {
+    position: fixed;
+    background: rgba(34, 40, 49, 0.9);
+    height: 70px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: 0;
+    left: 0;
+    transition: top 0.3s;
 }
 
 .menu {
@@ -21,4 +31,48 @@
 
 .menu ul li {
     margin-right: 1.5rem;
+}
+
+.logo span {
+    font-size: var(--heading);
+    font-weight: 700;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+.mobile {
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 300px;
+    height: 100vh;
+    padding: 2rem;
+    background: var(--hover);
+}
+
+.mobile ul {
+    padding: 0;
+}
+
+.mobile li {
+    list-style-type: none;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .mobileMenu {
+        z-index: 100;
+        display: block;
+        font-size: var(--heading);
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .nav {
+        padding: 0 20px;
+    }
 }

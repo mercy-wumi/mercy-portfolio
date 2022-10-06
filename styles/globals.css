@@ -1,14 +1,22 @@
 :root {
-  --body-color: rgb(3, 73, 73);
+  --body-color: #222831;
   --text-color: #fff;
-  --btn-border: rgb(8, 196, 196);
-  --btn-hover: rgb(5, 128, 128);
-  --heading: grey;
-  --rule: teal;
-  --hover: teal;
-  --background-dark: #000;
-  --font: 16px;
-  --littleLarge: 20px;
+
+  --btn-border: #ffd369;
+  --btn-hover: #ffd369;
+
+  --heading: #eeeeee;
+  --rule: #ffd369;
+  --hover: #393e46;
+
+  --defaultText: 16px;
+  --btnText: 14px;
+  --largeText: 18px;
+  --extraLargeText: 25px;
+  --litleHeading: 30px;
+  --heading: 35px;
+  --xxLargeText: 80px;
+  --xxLarge: 70px;
 }
 
 html,
@@ -19,6 +27,7 @@ body {
   color: var(--text-color);
   max-width: 1400px;
   margin: 0 auto;
+  font-size: var(--largeText);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }

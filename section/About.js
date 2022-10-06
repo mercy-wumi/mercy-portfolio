@@ -13,7 +13,7 @@ const About = () => {
                         <p>Hello! My name is Adams Mercy, a frontend developer with over two years of experience designing web applications that are scalable, maintainable and efficient. </p>
                         <p>My experience working with developers at various organisations remotely and on-site has boarden my knowlegde in frontend development and collaboration. Currently looking
                             into building full stack applications using MERN stack. </p>
-                        <p>Being a self-taught developer has not been easy so I put into writig some of the challenges I have faced along the way to help other developer scale that level with easy.</p>
+                        <p>Being a self-taught developer has not been easy so I put into writing some of the challenges I have faced along the way to help other developer scale that level with ease.</p>
                         <p>Here are some of the technologies I work with:</p>
                         <div className={aboutStyles.stack}>
                             <ul>

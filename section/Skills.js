@@ -1,6 +1,4 @@
-import {
-    useState
-} from 'react'
+import { useState } from 'react'
 import Experience from '../components/Experience'
 import Heading from '../components/Heading'
 import skillStyles from '../styles/section/Skills.module.css'
@@ -12,31 +10,31 @@ const works = [
         company: 'Freelancing',
         date: 'May 2022 - Present',
         jobDesc: [
-            'Design frontend for website',
-            'Design frontend for website',
-            'Design frontend for website'
+            'Write modern, efficient and scalable to create landing pages',
+            'Working on fullstack application using MERN stack app. Created a stackoverflow clone app with basic functionalities',
+            'Created a simple ecommerce product detail page where users can view product item images and add item to cart'
         ]
     },
     {
         id: 2,
-        jobTitle: 'Freelancer',
+        jobTitle: 'Frontend Developer',
         company: 'DigiScript',
-        date: 'May 2022 - Present',
+        date: 'Nov 2021 - April 2022',
         jobDesc: [
-            'Design frontend for website',
-            'Design frontend for website',
-            'Design frontend for website'
+            'Developed user interface codes that are scalable, reusable and efficient using ReactJs',
+            'Reviewed other team members code for better performance and optimization',
+            'Collaborated on building a blockchain MVP app with team members'
         ]
     },
     {
         id: 3,
-        jobTitle: 'Freelancer',
+        jobTitle: 'Frontend Developer',
         company: 'Ohealth',
-        date: 'May 2022 - Present',
+        date: 'Nov 2020 - Aug 2021',
         jobDesc: [
-            'Design frontend for website',
-            'Design frontend for website',
-            'Design frontend for website'
+            'Redesigned the existing company’s website ',
+            'Created company’s web application which is a replica of the mobile app thereby providing dual options to user accessing services rendered by the company using ReactJs, Rest Api, Material UI',
+            'Implemented web pages for laboratory registered with the company to be able to track user booking for Covid test from the company’s mobile application thereby increasing the company’s revenue by 30%'
         ]
     }
 ]

@@ -11,13 +11,24 @@ const Heading = ({ title }) => {
                 display: flex;
                 align-items: center;
                 width: 100%;
-                color: var(--heading)
+                color: var(--heading);
+                padding-bottom: 1rem;
             }
             .heading span {
                 width: 30%;
                 border: 0.2px solid var(--rule);
                 margin-left: 1rem;
                 margin-top: .5rem;
+            }
+            @media (max-width: 525px) {
+                .heading {
+                    font-size: var(--defaultText);
+                }
+            }
+            @media (max-width: 425px) {
+                .heading {
+                    font-size: var(--btnText);
+                }
             }
             `
             }

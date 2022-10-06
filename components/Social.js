@@ -1,29 +1,41 @@
-import { BsLinkedin, BsTwitter } from 'react-icons/bs'
+import Link from 'next/link'
+import { BsLinkedin, BsTwitter, BsGithub, BsInstagram } from 'react-icons/bs'
 
-const Social = () => {
+const Social = ({ row }) => {
     return (
-        <div className='all-social'>
-            <ul className='social'>
-                <li>LInkedIn</li>
-                <li>Twitter</li>
-                <li>Dev.to</li>
-                <li>GitHub</li>
-            </ul>
+        <div>
+            <div className={`${row === 'true' ? 'socialRow' : 'socialColumn'}`}>
+                <Link href='/'><a className={`${row === 'true' ? 'icon' : 'iconSpaceRow'}`}><BsLinkedin /></a></Link>
+                <Link href='/'><a className={`${row === 'true' ? 'icon' : 'iconSpaceRow'}`}><BsTwitter /></a></Link>
+                <Link href='/'><a className={`${row === 'true' ? 'icon' : 'iconSpaceRow'}`}><BsGithub /></a></Link>
+                <Link href='/'><a className={`${row === 'true' ? 'icon' : 'iconSpaceRow'}`}><BsInstagram /></a></Link>
+            </div>
             <style jsx>
                 {
                     `
-                    .all-social {
-                        position: fixed;
-                        width: inherit;
-                        z-index: 10;
-                        top: 60%;
+                    .socialColumn {
+                        display: flex;
+                        flex-direction: row;
+                    }
+                    .socialRow {
                         display: flex;
                         flex-direction: column;
-                        justify-content: flex-end !important; 
                     }
-                    .social {
-                        list-style-type: none;
-                        padding: 0
+                    .icon {
+                        margin: 1rem 0
+                    }
+                    .iconSpaceRow {
+                        margin: 2rem
+                    }
+                    .icon:hover,
+                    .iconSpaceRow:hover {
+                        transform: scale(2);
+                        color: var(--btn-border)
+                    }
+                    @media(max-width: 600px) {
+                        .iconSpaceRow {
+                        margin: 1rem
+                    }
                     }
                     `
                 }

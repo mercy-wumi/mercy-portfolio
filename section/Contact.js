@@ -12,6 +12,7 @@ const Contact = () => {
         <section>
             <Heading title='Contact Me' />
             <div className={contactStyles.contact}>
+                <h4 className={contactStyles.getInTouch}>Get in Touch</h4>
                 <p>I’m interested in full time, freelance opportunities. However, if you have any request or question, do reach out using the form.</p>
                 <form className={contactStyles.form}>
                     <div className={contactStyles.nameEmail}>

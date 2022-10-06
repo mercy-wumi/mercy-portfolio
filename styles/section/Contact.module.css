@@ -1,6 +1,19 @@
 .contact {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1rem 2rem;
+}
+
+.contact p {
+    line-height: 1.5;
+    font-size: var(--largeText);
+}
+
+.getInTouch {
+    font-size: var(--extraLargeText);
+    margin: 0;
 }
 
 .form {
@@ -29,4 +42,16 @@
 .message {
     outline: none;
     margin-bottom: 2rem !important;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact {
+        padding: 1rem;
+    }
 }

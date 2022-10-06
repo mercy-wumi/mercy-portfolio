@@ -1,6 +1,5 @@
 .skills {
-    padding-top: 2rem;
-    width: 50%;
+    width: 60%;
     margin: auto;
     display: flex;
 }
@@ -8,16 +7,18 @@
 .work {
     list-style-type: none;
     padding-left: 0;
+    margin: 0;
 }
 
 .work li {
     cursor: pointer;
-    border-left: 2px solid var(--btn-hover);
+    border-left: 2px solid var(--text-color);
     padding: .5rem 1rem;
 }
 
 .clicked {
     border-left: 2px solid var(--btn-border) !important;
+    color: var(--btn-border) !important;
 }
 
 .work li:hover {
@@ -26,5 +27,48 @@
 
 .experience {
     flex: 1;
+}
 
+.experience ul li {
+    list-style-type: square;
+    margin-bottom: .5rem;
+}
+
+.experience h5 {
+    margin: 0;
+    margin-top: .3rem;
+    font-size: var(--largeText);
+}
+
+@media (max-width: 768px) {
+    .skills {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .skills {
+        display: block;
+    }
+
+    .work {
+        display: flex;
+        overflow: scroll;
+    }
+
+    .work li {
+        cursor: pointer;
+        border-left: 0px;
+        border-bottom: 2px solid var(--btn-hover);
+        padding: .5rem 1rem;
+    }
+
+    .clicked {
+        border-bottom: 2px solid var(--heading) !important;
+        border-left: 0px !important;
+    }
+
+    .experience {
+        margin-top: 1rem;
+    }
 }

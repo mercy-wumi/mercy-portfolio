@@ -1,6 +1,5 @@
 .container {
     display: flex;
-    /* margin-bottom: 6rem; */
 }
 
 .aboutme,
@@ -21,14 +20,42 @@
     display: flex;
 }
 
+.stack ul {
+    list-style-type: square;
+}
+
 .stack>ul {
     margin-right: 3rem;
 }
 
 .img {
-    margin-left: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profileImg {
     border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: block;
+    }
+
+    .img {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .stack>ul {
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .stack>ul {
+        margin-right: .2rem;
+    }
 }
