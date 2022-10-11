@@ -9,13 +9,15 @@
 }
 
 .scrolled {
+    max-width: 1400px;
+    margin: 0 auto;
     position: fixed;
     background: rgba(34, 40, 49, 0.9);
     height: 70px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
     top: 0;
-    left: 0;
+    /* left: 0; */
     transition: top 0.3s;
 }
 
@@ -36,6 +38,7 @@
 .logo span {
     font-size: var(--heading);
     font-weight: 700;
+    cursor: pointer;
 }
 
 .mobileMenu {

@@ -47,7 +47,7 @@ const Skills = () => {
         console.log(id)
     }
     return (
-        <section>
+        <section id='skill'>
             <Heading title='Work Experience' />
             <div className={skillStyles.skills}>
                 <ul className={skillStyles.work}>

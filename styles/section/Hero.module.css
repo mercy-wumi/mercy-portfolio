@@ -1,3 +1,42 @@
+/* Hero Animation styles */
+
+.heroAni-appear {
+    opacity: 0;
+}
+
+.heroAni-appear-active {
+    opacity: 1;
+    transition: opacity 1000ms;
+}
+
+.heroAni-enter {
+    opacity: 0;
+}
+
+.heroAni-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1000ms, transform 1000ms;
+}
+
+.heroAni-enter-done {
+    opacity: 1;
+}
+
+.heroAni-exit {
+    opacity: 1;
+}
+
+.heroAni-exit-active {
+    opacity: 0;
+    transition: opacity 3000ms, transform 3000ms;
+}
+
+.heroAni-exit-done {
+    opacity: 0;
+}
+
+
 .hero {
     margin-top: 3rem;
     display: grid;

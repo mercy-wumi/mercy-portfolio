@@ -18,7 +18,7 @@ const ProjDetailOnHover = ({ projects, show, id }) => {
             <div className={projStyles.projDetails}>
                 <div className={projStyles.gitTitle}>
                     <h4>{hoverToShow.name}</h4>
-                    <Link href={hoverToShow.link}>
+                    <Link href={hoverToShow.github}>
                         <a target='_blank' className={projStyles.link}><BsGithub /></a>
                     </Link>
                 </div>

@@ -9,7 +9,7 @@ const Contact = () => {
     const [subject, setSubject] = useState('')
     const [message, setMessage] = useState('')
     return (
-        <section>
+        <section id='contact'>
             <Heading title='Contact Me' />
             <div className={contactStyles.contact}>
                 <h4 className={contactStyles.getInTouch}>Get in Touch</h4>

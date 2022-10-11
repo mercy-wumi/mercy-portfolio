@@ -5,10 +5,10 @@ const Social = ({ row }) => {
     return (
         <div>
             <div className={`${row === 'true' ? 'socialRow' : 'socialColumn'}`}>
-                <Link href='/'><a className={`${row === 'true' ? 'icon' : 'iconSpaceRow'}`}><BsLinkedin /></a></Link>
-                <Link href='/'><a className={`${row === 'true' ? 'icon' : 'iconSpaceRow'}`}><BsTwitter /></a></Link>
-                <Link href='/'><a className={`${row === 'true' ? 'icon' : 'iconSpaceRow'}`}><BsGithub /></a></Link>
-                <Link href='/'><a className={`${row === 'true' ? 'icon' : 'iconSpaceRow'}`}><BsInstagram /></a></Link>
+                <Link href='https://www.linkedin.com/in/adamsmercy'><a target='_blank' className={`${row === 'true' ? 'icon' : 'iconSpaceRow'}`}><BsLinkedin /></a></Link>
+                <Link href='/'><a target='_blank' className={`${row === 'true' ? 'icon' : 'iconSpaceRow'}`}><BsTwitter /></a></Link>
+                <Link href='https://github.com/mercy-wumi'><a target='_blank' className={`${row === 'true' ? 'icon' : 'iconSpaceRow'}`}><BsGithub /></a></Link>
+                <Link href='/'><a target='_blank' className={`${row === 'true' ? 'icon' : 'iconSpaceRow'}`}><BsInstagram /></a></Link>
             </div>
             <style jsx>
                 {
