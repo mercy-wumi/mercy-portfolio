@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import profile from '../public/images/profile.jpg'
 import Heading from '../components/Heading'
 import aboutStyles from '../styles/section/About.module.css'
 
@@ -31,9 +30,10 @@ const About = () => {
                 </div>
                 <div className={aboutStyles.img}>
                     <Image
-                        src={profile}
-                        width='300px'
-                        height='400px'
+                        src='/images/profile.jpg'
+                        width={300}
+                        height={400}
+                        alt='Profile Picture'
                         className={aboutStyles.profileImg}
                     />
                 </div>

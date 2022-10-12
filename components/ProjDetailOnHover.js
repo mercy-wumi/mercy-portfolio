@@ -14,6 +14,7 @@ const ProjDetailOnHover = ({ projects, show, id }) => {
             <Image
                 src={hoverToShow.projectImage}
                 className={projStyles.projImg}
+                alt='Project'
             />
             <div className={projStyles.projDetails}>
                 <div className={projStyles.gitTitle}>

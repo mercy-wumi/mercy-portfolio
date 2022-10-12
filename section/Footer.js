@@ -1,5 +1,5 @@
 import Social from "../components/Social"
-import footerStyles from '../styles/section/footer.module.css'
+import footerStyles from '../styles/section/Footer.module.css'
 
 const Footer = () => {
     return (

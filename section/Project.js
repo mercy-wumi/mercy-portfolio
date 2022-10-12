@@ -4,8 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import projStyles from '../styles/section/Project.module.css'
 import Button from '../components/Button'
-import Airbnb from '../public/images/Airbnb.png'
-import luxe from '../public/images/luxe.png'
+import Airbnb from '../public/images/airbnb.png'
 import codeoverflow from '../public/images/codeoverflow.png'
 import tastyHome from '../public/images/tastyHome.png'
 import todo from '../public/images/todo.png'
@@ -100,6 +99,7 @@ const Project = () => {
                             <Image
                                 src={project.projectImage}
                                 className={projStyles.img}
+                                alt='Project'
                             />
                             <div className={projStyles.projDetails}>
                                 <h4>{project.name}</h4>
@@ -120,6 +120,7 @@ const Project = () => {
                         <Image
                             src={project.projectImage}
                             className={projStyles.img}
+                            alt='Project'
                         />
                         <div className={projStyles.projDetails}>
                             <div className={projStyles.gitTitle}>
