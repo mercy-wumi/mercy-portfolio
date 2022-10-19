@@ -13,6 +13,9 @@ import addtocart from '../public/images/addtocart.png'
 import { BsGithub } from 'react-icons/bs'
 import ProjDetailOnHover from '../components/ProjDetailOnHover'
 import Articles from '../components/Articles'
+import { motion } from "framer-motion"
+import { stagger, animateIn } from '../components/Animation'
+import { useScroll } from '../components/useScroll'
 
 const projects = [
     {
@@ -74,6 +77,8 @@ const projects = [
 const Project = () => {
     const [showOnHover, setShowOnHover] = useState(false)
     const [projId, setProjId] = useState(null)
+    const [element, controls] = useScroll()
+
 
     // const delay = (id) => {
     //     console.log('setting delay')

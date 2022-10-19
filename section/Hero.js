@@ -2,24 +2,11 @@ import React, { useEffect } from "react"
 import Button from "../components/Button"
 import heroStyles from '../styles/section/Hero.module.css'
 import Social from "../components/Social"
-import { useAnimation, motion } from "framer-motion"
-import { useInView } from "react-intersection-observer"
 
 const Hero = () => {
-    const { ref, inView } = useInView()
-    const { animation } = useAnimation()
-
-    // useEffect(() => {
-    //     if (inView) {
-    //         animation.start({
-    //             y: 10,
-    //             transition: { type: 'spring', duration: 1 }
-    //         })
-    //     }
-    // })
 
     return (
-        <motion.section className={heroStyles.hero} ref={ref} animate={animation}>
+        <section className={heroStyles.hero} ref={ref} animate={animation}>
             <div>
                 <h1 className={heroStyles.heading}>
                     <span className={heroStyles.salute}>Hi, I'm</span>
@@ -39,7 +26,7 @@ const Hero = () => {
 
             </div>
             <div className={heroStyles.socialLinks}><Social row='true' /></div>
-        </motion.section>
+        </section>
     )
 }
 

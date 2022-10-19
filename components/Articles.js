@@ -3,6 +3,9 @@ import projStyles from '../styles/section/Project.module.css'
 import axios from '../public/images/axios.png'
 import git from '../public/images/git.png'
 import tailwindcss from '../public/images/tailwindcss.jpg'
+import { motion } from "framer-motion"
+import { stagger, animateIn } from '../components/Animation'
+import { useScroll } from '../components/useScroll'
 
 
 const articles = [
@@ -39,17 +42,18 @@ const articles = [
 ]
 
 const Articles = () => {
+    const [element, controls] = useScroll()
+
     return (
-        <div className={projStyles.articleList}>
+        <motion.div variants={stagger} className={projStyles.articleList} ref={element}>
             {articles.map(article => (
-                <div className={projStyles.article} key={article.id}>
+                <motion.div variants={animateIn} animate={controls} className={projStyles.article} key={article.id}>
                     <span>{article.category}</span>
                     <Link href={article.link}><a target='_blank'><h4>{article.name}</h4></a></Link>
                     <p>{article.details.length > 100 ? article.details.slice(0, 100) + ' ...' : article.details}</p>
-
-                </div>
+                </motion.div>
             ))}
-        </div>
+        </motion.div>
     )
 }
 
