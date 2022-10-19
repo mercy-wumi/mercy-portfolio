@@ -6,7 +6,7 @@ import Social from "../components/Social"
 const Hero = () => {
 
     return (
-        <section className={heroStyles.hero} ref={ref} animate={animation}>
+        <section className={heroStyles.hero}>
             <div>
                 <h1 className={heroStyles.heading}>
                     <span className={heroStyles.salute}>Hi, I'm</span>
