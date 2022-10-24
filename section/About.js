@@ -1,12 +1,16 @@
 import Image from 'next/image'
 import Heading from '../components/Heading'
 import aboutStyles from '../styles/section/About.module.css'
+import { motion } from "framer-motion"
+import { animateIn } from '../components/Animation'
+import { useScroll } from '../components/useScroll'
 
 const About = () => {
+    const [element, controls] = useScroll()
     return (
-        <section id='about-me'>
+        <section id='about-me' ref={element}>
             <Heading title='About Me' />
-            <div className={aboutStyles.container}>
+            <motion.div variants={animateIn} animate={controls} className={aboutStyles.container}>
                 <div className={aboutStyles.aboutme}>
                     <div className={aboutStyles.desc}>
                         <p>Hello! My name is Adams Mercy, a frontend developer with over two years of experience designing web applications that are scalable, maintainable and efficient. </p>
@@ -37,7 +41,7 @@ const About = () => {
                         className={aboutStyles.profileImg}
                     />
                 </div>
-            </div>
+            </motion.div>
         </section>
     )
 }

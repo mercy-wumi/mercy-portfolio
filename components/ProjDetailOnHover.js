@@ -3,14 +3,18 @@ import Image from 'next/image'
 import Button from '../components/Button'
 import projStyles from '../styles/section/Project.module.css'
 import { BsGithub } from 'react-icons/bs'
+import { motion } from "framer-motion"
+import { fadeIn } from '../components/Animation'
+import { useScroll } from '../components/useScroll'
 
 
 const ProjDetailOnHover = ({ projects, show, id }) => {
     const hoverToShow = projects.find(project => project.id === id);
     // console.log(hoverToShow)
+    const [element, controls] = useScroll()
 
     return (
-        <div className={`${projStyles.projEnlarge} ${show ? projStyles.projEnlargeShow : projStyles.projEnlargeHide}`}>
+        <motion.div ref={element} variants={fadeIn} animate={controls} className={`${projStyles.projEnlarge} ${show ? projStyles.projEnlargeShow : projStyles.projEnlargeHide}`}>
             <Image
                 src={hoverToShow.projectImage}
                 className={projStyles.projImg}
@@ -30,7 +34,7 @@ const ProjDetailOnHover = ({ projects, show, id }) => {
                     </a>
                 </Link>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

@@ -14,7 +14,7 @@ import { BsGithub } from 'react-icons/bs'
 import ProjDetailOnHover from '../components/ProjDetailOnHover'
 import Articles from '../components/Articles'
 import { motion } from "framer-motion"
-import { stagger, animateIn } from '../components/Animation'
+import { animateIn } from '../components/Animation'
 import { useScroll } from '../components/useScroll'
 
 const projects = [
@@ -79,14 +79,8 @@ const Project = () => {
     const [projId, setProjId] = useState(null)
     const [element, controls] = useScroll()
 
-
-    // const delay = (id) => {
-    //     console.log('setting delay')
-    //     setTimeout(() => { handleHover(id), 5000 })
-    // }
-
     const handleHover = (id) => {
-        // console.log('setting delay')
+        console.log('setting')
         setShowOnHover(true)
         setProjId(id)
     }
@@ -97,9 +91,9 @@ const Project = () => {
     return (
         <section id='project'>
             <Heading title='Some of my Projects' />
-            <div className={projStyles.proj}>
+            <div ref={element} className={projStyles.proj}>
                 {projects.map(project => (
-                    <div className={projStyles.projItem} key={project.id} onMouseOver={() => handleHover(project.id)} onMouseOut={() => handleRemove(project.id)}>
+                    <motion.div variants={animateIn} animate={controls} className={projStyles.projItem} key={project.id} onMouseOver={() => handleHover(project.id)} onMouseOut={() => handleRemove(project.id)}>
                         <div>
                             <Image
                                 src={project.projectImage}
@@ -116,7 +110,7 @@ const Project = () => {
                             </div>
                         </div>
                         {project.id === projId ? <ProjDetailOnHover projects={projects} show={showOnHover} id={projId} /> : null}
-                    </div>
+                    </motion.div>
                 ))}
             </div>
             <div className={projStyles.projMobile}>

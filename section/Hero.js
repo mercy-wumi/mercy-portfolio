@@ -2,11 +2,21 @@ import React, { useEffect } from "react"
 import Button from "../components/Button"
 import heroStyles from '../styles/section/Hero.module.css'
 import Social from "../components/Social"
+import { motion } from "framer-motion"
+
 
 const Hero = () => {
 
     return (
-        <section className={heroStyles.hero}>
+        <motion.section className={heroStyles.hero}
+            initial={{ y: 30, opacity: 0 }}
+            animate={{
+                y: 0, opacity: 1, transition: {
+                    duration: 0.5
+                }
+            }
+            }
+        >
             <div>
                 <h1 className={heroStyles.heading}>
                     <span className={heroStyles.salute}>Hi, I'm</span>
@@ -26,7 +36,7 @@ const Hero = () => {
 
             </div>
             <div className={heroStyles.socialLinks}><Social row='true' /></div>
-        </section>
+        </motion.section>
     )
 }
 

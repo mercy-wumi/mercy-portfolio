@@ -2,6 +2,9 @@ import { useState } from 'react'
 import Experience from '../components/Experience'
 import Heading from '../components/Heading'
 import skillStyles from '../styles/section/Skills.module.css'
+import { motion } from "framer-motion"
+import { animateIn } from '../components/Animation'
+import { useScroll } from '../components/useScroll'
 
 const works = [
     {
@@ -40,6 +43,8 @@ const works = [
 ]
 
 const Skills = () => {
+
+    const [element, controls] = useScroll()
     const [workToDisplay, setWorkToDisplay] = useState(works[0])
 
     const handleClick = (id) => {
@@ -49,14 +54,14 @@ const Skills = () => {
     return (
         <section id='skill'>
             <Heading title='Work Experience' />
-            <div className={skillStyles.skills}>
+            <motion.div ref={element} variants={animateIn} animate={controls} className={skillStyles.skills}>
                 <ul className={skillStyles.work}>
                     {works.map(work => (
                         <li onClick={() => handleClick(work.id)} key={work.id} className={`${workToDisplay.id === work.id ? skillStyles.clicked : ''}`}>{work.company}</li>
                     ))}
                 </ul>
                 <Experience works={workToDisplay} />
-            </div>
+            </motion.div>
         </section>
     )
 }

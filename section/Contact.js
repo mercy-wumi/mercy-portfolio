@@ -5,9 +5,13 @@ import contactStyles from '../styles/section/Contact.module.css'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import emailjs from '@emailjs/browser'
+import { motion } from "framer-motion"
+import { animateIn } from '../components/Animation'
+import { useScroll } from '../components/useScroll'
 
 
 const Contact = () => {
+    const [element, controls] = useScroll()
     const messageSent = () => toast.success("Thank you for your message, I will be in touch soon!");
 
     const errorMessage = () => toast.error("Opps! an error occured.");
@@ -63,7 +67,7 @@ const Contact = () => {
     return (
         <section id='contact'>
             <Heading title='Contact Me' />
-            <div className={contactStyles.contact}>
+            <motion.div ref={element} variants={animateIn} animate={controls} className={contactStyles.contact}>
                 <h4 className={contactStyles.getInTouch}>Get in Touch</h4>
                 <p>I’m interested in full time, freelance opportunities. However, if you have any request or question, do reach out using the form.</p>
                 <form className={contactStyles.form} onSubmit={handleSubmit}>
@@ -101,7 +105,7 @@ const Contact = () => {
                     </textarea>
                     <Button text='Send Message!' />
                 </form>
-            </div>
+            </motion.div>
             <ToastContainer />
         </section>
     )
