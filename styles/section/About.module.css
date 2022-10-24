@@ -24,7 +24,7 @@
     list-style-type: square;
 }
 
-.stack>ul {
+.stackList {
     margin-right: 3rem;
 }
 
@@ -49,13 +49,23 @@
 }
 
 @media (max-width: 600px) {
-    .stack>ul {
+    .stackList {
         margin-right: 1rem;
     }
 }
 
 @media (max-width: 425px) {
-    .stack>ul {
-        margin-right: .2rem;
+    .stackList {
+        margin-right: 0.2rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .stack ul {
+        margin-right: 0;
+    }
+
+    .stackList {
+        padding-left: 10px;
     }
 }

@@ -19,7 +19,7 @@ const About = () => {
                         <p>Being a self-taught developer has not been easy so I put into writing some of the challenges I have faced along the way to help other developer scale that level with ease.</p>
                         <p>Here are some of the technologies I work with:</p>
                         <div className={aboutStyles.stack}>
-                            <ul>
+                            <ul className={aboutStyles.stackList}>
                                 <li>JavaScript</li>
                                 <li>React</li>
                                 <li>NodeJs</li>

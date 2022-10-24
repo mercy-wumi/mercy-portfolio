@@ -19,6 +19,7 @@
 
 .stack {
     display: flex;
+    flex-wrap: wrap;
     font-size: var(--defaultText);
 }
 
@@ -36,6 +37,11 @@
 .gitTitle span {
     font-weight: 600;
     font-size: var(--littleLarge);
+}
+
+.github {
+    display: flex;
+    align-items: center;
 }
 
 /* Project Details on Hover */
@@ -113,7 +119,8 @@
 @media (max-width: 810px) {
 
     .proj,
-    .articleList {
+    .articleList,
+    .projMobile {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
     }
@@ -136,5 +143,17 @@
 
     .projMobile {
         display: grid;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .projMobile,
+    .articleList {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .article {
+        padding: 1rem;
     }
 }

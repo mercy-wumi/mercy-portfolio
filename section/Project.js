@@ -80,7 +80,6 @@ const Project = () => {
     const [element, controls] = useScroll()
 
     const handleHover = (id) => {
-        console.log('setting')
         setShowOnHover(true)
         setProjId(id)
     }
