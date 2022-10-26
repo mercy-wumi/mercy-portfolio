@@ -57,14 +57,12 @@
     }
 
     .work li {
-        cursor: pointer;
         border-left: 0px;
-        border-bottom: 2px solid var(--btn-hover);
-        padding: .5rem 1rem;
+        border-bottom: 2px solid var(--text-color);
     }
 
     .clicked {
-        border-bottom: 2px solid var(--heading) !important;
+        border-bottom: 2px solid var(--btn-border) !important;
         border-left: 0px !important;
     }
 
