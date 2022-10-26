@@ -71,11 +71,13 @@
     }
 }
 
-@media (max-width: 1110px) {
-    .heading span {
-        font-size: 60px;
+@media (min-width: 1110px) {
+
+    .intro {
+        width: 70%;
     }
 }
+
 
 @media (max-width: 870px) {
     .heading span {

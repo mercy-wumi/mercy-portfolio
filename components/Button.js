@@ -1,8 +1,8 @@
 import React from 'react'
 import btnStyles from '../styles/components/Button.module.css'
-const Button = ({ text }) => {
+const Button = ({ text, click }) => {
     return (
-        <button className={btnStyles.button}>{text}</button>
+        <button onClick={click} className={btnStyles.button}>{text}</button>
     )
 }
 

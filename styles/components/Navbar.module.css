@@ -12,6 +12,8 @@
     max-width: 1400px;
     margin: 0 auto;
     position: fixed;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     background: rgba(34, 40, 49, 0.9);
     height: 70px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),

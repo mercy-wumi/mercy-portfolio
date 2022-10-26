@@ -14,6 +14,14 @@ const Navbar = () => {
         setPageHeight(window.scrollY)
     }
 
+    // const download = () => {
+    //     console.log('download')
+    //     const URL = 'http://dynamic-link.com/sample.xlsx'
+    //     if (typeof window !== "undefined") {
+    //         window.location.href = URL
+    //     }
+    // }
+
     useEffect(() => {
         window.addEventListener('scroll', handleScroll)
         return () => window.removeEventListener('scroll', handleScroll)
@@ -71,7 +79,12 @@ const Navbar = () => {
                             Contact</a>
                     </li>
                 </ul>
-                <Button text='Resume' />
+                <Link href='https://drive.google.com/file/d/1fUK9IypS0D6Rc0Eb_OGffa0T2Xqbhlfq/view?usp=sharing'>
+                    <a target='_blank' rel="noopener noreferrer">
+                        <Button text='Resume' link='true' />
+                    </a>
+                </Link>
+                {/* <Button click={download} text='Resume' /> */}
             </div>
             <div className={navStyles.mobileMenu} onClick={handleToggle}>
                 {mobileNav ? <CgClose /> : <HiMenuAlt2 />}
