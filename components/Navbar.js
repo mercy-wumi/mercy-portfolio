@@ -79,7 +79,7 @@ const Navbar = () => {
                             Contact</a>
                     </li>
                 </ul>
-                <Link href='https://drive.google.com/file/d/1fUK9IypS0D6Rc0Eb_OGffa0T2Xqbhlfq/view?usp=sharing'>
+                <Link href='https://drive.google.com/file/d/1AmWQLiTU8lP1FXPxkhpcsvphMhy30rRL/view?usp=sharing'>
                     <a target='_blank' rel="noopener noreferrer">
                         <Button text='Resume' link='true' />
                     </a>
