@@ -4,7 +4,19 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+}
+
+.projects,
+.projMobile,
+.articleList {
     margin-bottom: 8rem;
+}
+
+.loadMore {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    align-items: center;
 }
 
 .projMobile {
@@ -137,7 +149,7 @@
 }
 
 @media (max-width: 627px) {
-    .proj {
+    .projects {
         display: none;
     }
 

@@ -23,7 +23,7 @@ const Hero = () => {
                     <span>Adams Mercy,</span>
                     <span>Web Developer,</span>
                 </h1>
-                <p className={heroStyles.intro}>A self-taught developer with over two years experience in frontend development. Currently, transitioning into full-stack development.</p>
+                <p className={heroStyles.intro}>A self-taught developer with over two years experience in frontend development. Currently, excited about and learning Web3.</p>
                 <a
                     href='#contact'
                     onClick={e => {
