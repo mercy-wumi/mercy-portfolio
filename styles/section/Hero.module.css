@@ -40,7 +40,7 @@
 .hero {
     margin-top: 3rem;
     display: grid;
-    grid-template-columns: 5fr 3fr;
+    grid-template-columns: 6fr 2fr;
 }
 
 .heading span {

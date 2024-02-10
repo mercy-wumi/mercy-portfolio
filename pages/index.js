@@ -5,7 +5,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Adams Mercy</title>
-        <meta name='keyword' content='Frontend developer, Fullstack developer, self-taught developer' />
+        <meta name='keyword' content='Frontend developer, Smart Contract developer' />
       </Head>
     </div>
   )

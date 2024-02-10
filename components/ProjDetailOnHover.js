@@ -10,7 +10,6 @@ import { useScroll } from '../components/useScroll'
 
 const ProjDetailOnHover = ({ projects, show, id }) => {
     const hoverToShow = projects.find(project => project.id === id);
-    // console.log(hoverToShow)
     const [element, controls] = useScroll()
 
     return (

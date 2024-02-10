@@ -1,25 +1,7 @@
 import Link from 'next/link'
-// import { motion } from 'framer-motion'
 import { BsLinkedin, BsTwitter, BsGithub, BsInstagram } from 'react-icons/bs'
 
 const Social = ({ row }) => {
-    // const stagger = {
-    //     animate: {
-    //         transition: {
-    //             staggerChildren: 0.2,
-    //             delay: 2
-    //         }
-    //     }
-    // }
-    // const fadeIn = {
-    //     initial: { y: 30, opacity: 0 },
-    //     animate: {
-    //         y: 0, opacity: 1, transition: {
-    //             duration: 0.5
-    //         }
-
-    //     }
-    // }
     return (
         <div>
             <div className={`${row === 'true' ? 'socialRow' : 'socialColumn'}`}>

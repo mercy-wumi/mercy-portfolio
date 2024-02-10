@@ -69,7 +69,7 @@ const Contact = () => {
             <Heading title='Contact Me' />
             <motion.div ref={element} variants={animateIn} animate={controls} className={contactStyles.contact}>
                 <h4 className={contactStyles.getInTouch}>Get in Touch</h4>
-                <p>I’m interested in full time, freelance opportunities. However, if you have any request or question, do reach out using the form.</p>
+                <p>Open to Frontend and Junior smart contract developer role. However, if you have any request or question, do reach out using the form.</p>
                 <form className={contactStyles.form} onSubmit={handleSubmit}>
                     <div className={contactStyles.nameEmail}>
                         <input
